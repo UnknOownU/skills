@@ -144,6 +144,10 @@ Read-only. Use for "Are my clients ready for e-invoicing?" / "Audit my clients".
 
 ## Workflow 2 — Collect payment with a payment link
 
+Payment links need a one-time activation in the Qonto web app first. If
+`create_payment_link` reports the org has not set them up, tell the user to
+activate payment links in Qonto, then retry — activation is not an MCP tool.
+
 1. After an invoice exists, offer a card payment link. On yes, confirm amount,
    then `create_payment_link` (invoice variant: `invoice_id`, `invoice_number`,
    `debitor_name`, amount). For a pure test, a standalone link is possible on

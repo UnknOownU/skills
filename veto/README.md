@@ -63,6 +63,9 @@ then goes to work collecting your money.
    (`~/.claude/skills/` for Claude Code)
 3. Say: *"Invoice Qonto 1,200€ for June consulting"* (yes, invoice Qonto — it's a Qonto client too 😉)
 
+> The payment-collection step needs payment links activated once in the Qonto
+> web app (a quick Mollie onboarding). Every other workflow works out of the box.
+
 ## Try these
 
 ```
